@@ -1,7 +1,7 @@
 {
   "private": true,
   "main": "src/App.tsx",
-  "homepage": "http://NatelevAU.github.io/hhc-website",
+  "homepage": "https://www.hunterheritagecarpentry.com.au",
   "repository": {
     "type": "git",
     "url": "https://github.com/NatelevAU/hhc-website.git"
