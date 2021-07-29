@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/hhc-website/static/css/main.f4b50256.chunk.css",
+    "main.js": "/hhc-website/static/js/main.28a57fae.chunk.js",
+    "main.js.map": "/hhc-website/static/js/main.28a57fae.chunk.js.map",
+    "runtime-main.js": "/hhc-website/static/js/runtime-main.b75690f7.js",
+    "runtime-main.js.map": "/hhc-website/static/js/runtime-main.b75690f7.js.map",
+    "static/js/2.7fa45db8.chunk.js": "/hhc-website/static/js/2.7fa45db8.chunk.js",
+    "static/js/2.7fa45db8.chunk.js.map": "/hhc-website/static/js/2.7fa45db8.chunk.js.map",
+    "index.html": "/hhc-website/index.html",
+    "static/css/main.f4b50256.chunk.css.map": "/hhc-website/static/css/main.f4b50256.chunk.css.map",
+    "static/js/2.7fa45db8.chunk.js.LICENSE.txt": "/hhc-website/static/js/2.7fa45db8.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/hhc-website/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b75690f7.js",
+    "static/js/2.7fa45db8.chunk.js",
+    "static/css/main.f4b50256.chunk.css",
+    "static/js/main.28a57fae.chunk.js"
+  ]
+}
