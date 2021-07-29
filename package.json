@@ -1,10 +1,10 @@
 {
   "private": true,
   "main": "src/App.tsx",
-  "homepage": "https://www.website.com",
+  "homepage": "http://NatelevAU.github.io/hhc-website",
   "repository": {
     "type": "git",
-    "url": "https://github.com/NatelevAU/natelev.git"
+    "url": "https://github.com/NatelevAU/hhc-website.git"
   },
   "scripts": {
     "dev": "react-scripts start",
@@ -16,13 +16,16 @@
     "lint": "yarn lint-full",
     "lint-full": "eslint . --max-warnings=0 && prettier --check ./**/*.{json,gql,yml,yaml,html,md,css}",
     "lint-fix": "eslint --fix . --max-warnings=0 && prettier --write ./**/*.{json,gql,yml,yaml,html,md,css}",
-    "reinstall": "rm -rf node_modules && yarn install"
+    "reinstall": "rm -rf node_modules && yarn install",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@material-ui/core": "^4.12.2",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "@types/react-sound": "^1.2.3",
+    "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",

@@ -4,10 +4,10 @@
 
 # React-App
 
-[![Website](https://img.shields.io/website?url=https://www.website.com)](https://www.website.com)
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/NatelevAU/template-react-app/Build)](https://github.com/NatelevAU/template-react-app/actions)
+[![Website](https://img.shields.io/website?url=https://www.hunterheritagecarpentry.com.au)](https://www.hunterheritagecarpentry.com.au)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/NatelevAU/hhc-website/Build)](https://github.com/NatelevAU/hhc-website/actions)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?label=style)](https://github.com/prettier/prettier)
-[![GitHub](https://img.shields.io/github/license/NatelevAU/template-react-app)](https://choosealicense.com/licenses/isc/)
+[![GitHub](https://img.shields.io/github/license/NatelevAU/hhc-website)](https://choosealicense.com/licenses/isc/)
 
 ## Setup
 
