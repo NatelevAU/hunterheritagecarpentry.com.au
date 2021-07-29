@@ -23,3 +23,9 @@ jobs:
       - run: yarn install
       - run: yarn lint-full
       - run: yarn build
+
+      - name: Deploy to Github Pages
+        uses: JamesIves/github-pages-deploy-action@4.1.4
+        with:
+          branch: gh-pages
+          folder: build

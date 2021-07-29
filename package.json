@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "react-scripts start",
     "start": "serve -s build",
-    "build": "rm -rf build && react-scripts build",
+    "build": "react-scripts build",
     "test": "echo no tests implemented",
     "eject": "react-scripts eject",
     "clean": "rm -rf build *.log && yarn lint-fix",
