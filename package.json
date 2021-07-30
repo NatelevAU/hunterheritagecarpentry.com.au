@@ -12,13 +12,14 @@
     "build": "react-scripts build",
     "test": "echo no tests implemented",
     "eject": "react-scripts eject",
-    "clean": "rm -rf build *.log && yarn lint-fix",
+    "clean": "rm -rf build hint-report *.log && yarn lint-fix",
     "lint": "yarn lint-full",
     "lint-full": "eslint . --max-warnings=0 && prettier --check ./**/*.{json,gql,yml,yaml,html,md,css}",
     "lint-fix": "eslint --fix . --max-warnings=0 && prettier --write ./**/*.{json,gql,yml,yaml,html,md,css}",
     "reinstall": "rm -rf node_modules && yarn install",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "webhint": "hint http://localhost:3000"
   },
   "dependencies": {
     "@material-ui/core": "^4.12.2",
@@ -27,6 +28,7 @@
     "@types/react-router-dom": "^5.1.8",
     "@types/react-sound": "^1.2.3",
     "gh-pages": "^3.2.3",
+    "keyframes": "^2.3.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^5.2.0",
@@ -70,6 +72,7 @@
     "production": [
       ">0.2%",
       "not dead",
+      "not ie <=11",
       "not op_mini all"
     ],
     "development": [
