@@ -28,4 +28,4 @@ yarn dev
 
 ## Author
 
-[Nathan Levy](https://www.nathanlevy.com/)
+[Nathan Levy](https://nathanlevy.com/)
