@@ -1,6 +1,8 @@
 <!-- markdownlint-disable MD033 MD041 -->
 
-<img src="public/logo192.png" height="192px" align="right"/>
+<a href="https://www.hunterheritagecarpentry.com.au" target="_blank" rel="noopener noreferrer">
+    <img src="public/logo192.png" height="192px" align="right" alt="Hunter Heritage Carpentry Double H Logo"/>
+</a>
 
 # React-App
 
