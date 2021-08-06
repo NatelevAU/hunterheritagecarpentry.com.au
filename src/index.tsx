@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 
 import About from './pages/About/About';
 // import Contact from './pages/Contact/Contact';
@@ -13,10 +13,13 @@ import PageNotFound from './pages/PageNotFound/PageNotFound';
 import './index.css';
 
 const App = ({}) => {
+  const HomeRedirect: React.FC<{}> = props => <Redirect to="/" {...props} />;
+
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route exact path="/home" component={HomeRedirect} />
         <Route exact path="/about" component={About} />
         {/* <Route exact path="/services" component={Services} /> */}
         {/* <Route exact path="/jobs" component={Jobs} /> */}

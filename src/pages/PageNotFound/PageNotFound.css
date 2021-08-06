@@ -2,13 +2,8 @@
   text-align: center;
 }
 
-.PageNotFound-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 .PageNotFound-header {
-  background-color: #ebe3c6;
+  background-color: #d5b970;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -18,6 +13,7 @@
   color: rgb(0, 0, 0);
 }
 
-.PageNotFound-link {
-  color: #61dafb;
+.PageNotFound-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
