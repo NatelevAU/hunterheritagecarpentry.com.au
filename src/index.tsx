@@ -18,13 +18,13 @@ const App = ({}) => {
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/home" component={HomeRedirect} />
-        <Route exact path="/about" component={About} />
-        {/* <Route exact path="/services" component={Services} /> */}
-        {/* <Route exact path="/jobs" component={Jobs} /> */}
-        {/* <Route exact path="/testimonials" component={Testimonials} /> */}
-        {/* <Route exact path="/contact" component={Contact} /> */}
+        <Route path="/" component={Home} />
+        <Route path="/home" component={HomeRedirect} />
+        <Route path="/about" component={About} />
+        {/* <Route path="/services" component={Services} /> */}
+        {/* <Route path="/jobs" component={Jobs} /> */}
+        {/* <Route path="/testimonials" component={Testimonials} /> */}
+        {/* <Route path="/contact" component={Contact} /> */}
         <Route component={PageNotFound} />
       </Switch>
     </BrowserRouter>
