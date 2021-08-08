@@ -13,20 +13,34 @@ import Soon from './pages/Soon/Soon';
 // import Testimonials from './pages/Testimonials/Testimonials';
 import './index.css';
 
-const App = ({}) => {
+const AppContainer = () => {
+  return (
+    <div>
+      <Home />
+      <About />
+      {/* <Services />
+      <Jobs />
+      <Testimonials />
+      <Contact /> */}
+    </div>
+  );
+};
+
+const App = () => {
   const HomeRedirect: React.FC<{}> = props => <Redirect to="/" {...props} />;
 
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route exact path="/" component={Soon} />
-        {/* <Route exact path="/home" component={HomeRedirect} /> */}
-        <Route exact path="/home" component={Home} />
-        <Route exact path="/about" component={About} />
-        {/* <Route exact path="/services" component={Services} /> */}
-        {/* <Route exact path="/jobs" component={Jobs} /> */}
-        {/* <Route exact path="/testimonials" component={Testimonials} /> */}
-        {/* <Route exact path="/contact" component={Contact} /> */}
+        <Route path="/home" component={AppContainer} />
+        {/* <Route exact path="/" component={AppContainer} /> */}
+        {/* <Route path="/home" component={HomeRedirect} /> */}
+        <Route path="/about" component={AppContainer} />
+        <Route path="/services" component={AppContainer} />
+        <Route path="/jobs" component={AppContainer} />
+        <Route path="/testimonials" component={AppContainer} />
+        <Route path="/contact" component={AppContainer} />
         <Route component={PageNotFound} />
       </Switch>
     </BrowserRouter>

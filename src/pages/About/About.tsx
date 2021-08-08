@@ -6,12 +6,12 @@ const About = () => {
   return (
     <div className="About">
       <header className="About-header">
-        <h1>About Us</h1>
+        <h1>about us</h1>
       </header>
       <div className="About-body">
-        <h2>Who We Are</h2>
-        <h2>Our Mission</h2>
-        <h2>What We Do</h2>
+        <h2>who we are</h2>
+        <h2>our mission</h2>
+        <h2>what we do</h2>
       </div>
       <div className="About-body">
         <div className="About-border">
