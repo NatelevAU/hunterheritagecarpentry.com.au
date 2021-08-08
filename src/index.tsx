@@ -7,8 +7,9 @@ import About from './pages/About/About';
 import Home from './pages/Home/Home';
 // import Jobs from './pages/Jobs/Jobs';
 import PageNotFound from './pages/PageNotFound/PageNotFound';
-
 // import Services from './pages/Services/Services';
+import Soon from './pages/Soon/Soon';
+
 // import Testimonials from './pages/Testimonials/Testimonials';
 import './index.css';
 
@@ -18,13 +19,14 @@ const App = ({}) => {
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Switch>
-        <Route path="/" component={Home} />
-        <Route path="/home" component={HomeRedirect} />
-        <Route path="/about" component={About} />
-        {/* <Route path="/services" component={Services} /> */}
-        {/* <Route path="/jobs" component={Jobs} /> */}
-        {/* <Route path="/testimonials" component={Testimonials} /> */}
-        {/* <Route path="/contact" component={Contact} /> */}
+        <Route exact path="/" component={Soon} />
+        {/* <Route exact path="/home" component={HomeRedirect} /> */}
+        <Route exact path="/home" component={Home} />
+        <Route exact path="/about" component={About} />
+        {/* <Route exact path="/services" component={Services} /> */}
+        {/* <Route exact path="/jobs" component={Jobs} /> */}
+        {/* <Route exact path="/testimonials" component={Testimonials} /> */}
+        {/* <Route exact path="/contact" component={Contact} /> */}
         <Route component={PageNotFound} />
       </Switch>
     </BrowserRouter>
