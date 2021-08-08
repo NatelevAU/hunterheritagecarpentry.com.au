@@ -8,6 +8,7 @@ import Home from './pages/Home/Home';
 import Jobs from './pages/Jobs/Jobs';
 import PageNotFound from './pages/PageNotFound/PageNotFound';
 import Services from './pages/Services/Services';
+import Soon from './pages/Soon/Soon';
 
 import './index.css';
 
@@ -30,7 +31,8 @@ const App = () => {
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Switch>
-        <Route exact path="/" component={AppContainer} />
+        <Route exact path="/" component={Soon} />
+        {/* <Route exact path="/" component={AppContainer} /> */}
         <Route path="/home" component={AppContainer} />
         <Route path="/about" component={AppContainer} />
         <Route path="/services" component={AppContainer} />
