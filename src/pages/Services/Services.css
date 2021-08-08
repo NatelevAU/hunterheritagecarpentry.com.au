@@ -21,8 +21,8 @@
   font-family: 'EB Garamond';
   display: inline-grid;
   grid-template-columns: repeat(3, 3fr);
-  margin-left: 250px;
-  margin-right: 250px;
+  /* margin-left: 250px;
+  margin-right: 250px; */
 }
 
 .Services-bordered {
