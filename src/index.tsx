@@ -5,7 +5,7 @@ import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 import About from './pages/About/About';
 // import Contact from './pages/Contact/Contact';
 import Home from './pages/Home/Home';
-// import Jobs from './pages/Jobs/Jobs';
+import Jobs from './pages/Jobs/Jobs';
 import PageNotFound from './pages/PageNotFound/PageNotFound';
 import Services from './pages/Services/Services';
 import Soon from './pages/Soon/Soon';
@@ -19,7 +19,7 @@ const AppContainer = () => {
       <Home />
       <About />
       <Services />
-      {/* <Jobs /> */}
+      <Jobs />
       {/* <Testimonials /> */}
       {/* <Contact /> */}
     </div>
