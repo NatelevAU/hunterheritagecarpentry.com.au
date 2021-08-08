@@ -39,3 +39,8 @@ h1 {
   text-align: center;
   letter-spacing: 10;
 }
+
+h2 {
+  font-weight: lighter;
+  text-align: center;
+}

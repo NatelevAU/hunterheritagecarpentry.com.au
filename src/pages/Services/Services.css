@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
 
-.About {
+.Services {
   text-align: center;
-  background-color: #d5b970;
-  color: rgb(255, 255, 255);
+  background-color: #ffffff;
+  color: #d5b970;
   font-family: 'Cinzel Decorative';
   text-align: center;
+  margin-bottom: 50px;
 }
 
-.About-header {
+.Services-header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,25 +17,24 @@
   font-size: calc(10px + 2vmin);
 }
 
-.About-body {
-  display: grid;
+.Services-body {
+  font-family: 'EB Garamond';
+  display: inline-grid;
   grid-template-columns: repeat(3, 3fr);
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 250px;
+  margin-right: 250px;
 }
 
-.About-border {
-  border-style: solid;
-  border-color: rgb(255, 255, 255);
-  border-width: thin;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-bottom: 50px;
+.Services-bordered {
+  border-left: solid #d5b970;
+  border-right: solid #d5b970;
 }
 
-.About-paragraph {
+.Services-paragraph {
   font-family: 'EB Garamond';
   text-justify: inter-word;
   line-height: 1.6;
   margin: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
 }

@@ -7,7 +7,7 @@ import About from './pages/About/About';
 import Home from './pages/Home/Home';
 // import Jobs from './pages/Jobs/Jobs';
 import PageNotFound from './pages/PageNotFound/PageNotFound';
-// import Services from './pages/Services/Services';
+import Services from './pages/Services/Services';
 import Soon from './pages/Soon/Soon';
 
 // import Testimonials from './pages/Testimonials/Testimonials';
@@ -18,10 +18,10 @@ const AppContainer = () => {
     <div>
       <Home />
       <About />
-      {/* <Services />
-      <Jobs />
-      <Testimonials />
-      <Contact /> */}
+      <Services />
+      {/* <Jobs /> */}
+      {/* <Testimonials /> */}
+      {/* <Contact /> */}
     </div>
   );
 };
