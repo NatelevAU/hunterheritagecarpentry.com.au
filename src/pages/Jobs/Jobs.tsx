@@ -12,7 +12,7 @@ const Jobs = () => {
   return (
     <div className="Jobs">
       <header className="Jobs-header">
-        <h1>our services</h1>
+        <h1>past projects</h1>
       </header>
       <div className="Jobs-body">
         <div>

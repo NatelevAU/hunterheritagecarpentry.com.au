@@ -3,14 +3,12 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 
 import About from './pages/About/About';
-// import Contact from './pages/Contact/Contact';
+import Contact from './pages/Contact/Contact';
 import Home from './pages/Home/Home';
 import Jobs from './pages/Jobs/Jobs';
 import PageNotFound from './pages/PageNotFound/PageNotFound';
 import Services from './pages/Services/Services';
-import Soon from './pages/Soon/Soon';
 
-// import Testimonials from './pages/Testimonials/Testimonials';
 import './index.css';
 
 const AppContainer = () => {
@@ -21,7 +19,7 @@ const AppContainer = () => {
       <Services />
       <Jobs />
       {/* <Testimonials /> */}
-      {/* <Contact /> */}
+      <Contact />
     </div>
   );
 };
@@ -32,10 +30,8 @@ const App = () => {
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Switch>
-        <Route exact path="/" component={Soon} />
+        <Route exact path="/" component={AppContainer} />
         <Route path="/home" component={AppContainer} />
-        {/* <Route exact path="/" component={AppContainer} /> */}
-        {/* <Route path="/home" component={HomeRedirect} /> */}
         <Route path="/about" component={AppContainer} />
         <Route path="/services" component={AppContainer} />
         <Route path="/jobs" component={AppContainer} />
