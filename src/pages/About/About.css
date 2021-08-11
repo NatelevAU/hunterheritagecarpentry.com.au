@@ -16,20 +16,16 @@
 }
 
 .About-body {
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 3.5%;
+  margin-right: 3.5%;
   display: inline-flex;
 }
 
 .About-box {
-  height: 100%;
-  position: relative;
-  top: 0px;
-  object-fit: cover;
+  display: block;
 }
 
 .About-border {
-  display: inline-block;
   border-style: solid;
   border-color: rgb(255, 255, 255);
   border-width: thin;

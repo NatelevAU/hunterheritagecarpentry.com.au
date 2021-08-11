@@ -17,7 +17,9 @@ const Home = () => {
         <h1>hunter heritage carpentry</h1>
       </header>
       <body className="Home-body">
-        <p>preservation and restoration specialists</p>
+        <p>
+          preservation and <br></br> restoration specialists
+        </p>
       </body>
     </div>
   );
