@@ -13,14 +13,14 @@ import './index.css';
 
 const AppContainer = () => {
   return (
-    <div>
+    <>
       <Home />
       <About />
       <Services />
       <Jobs />
       {/* <Testimonials /> */}
       <Contact />
-    </div>
+    </>
   );
 };
 

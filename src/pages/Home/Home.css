@@ -1,25 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
 
-.Home {
-  text-align: center;
-  font-family: 'Cinzel Decorative';
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: #ffffff;
-}
-
-.Home-body {
-  text-align: left;
-  font-family: 'Cinzel Decorative';
-  font-weight: 100;
-  font-size: calc(10px + 4vmin);
-  letter-spacing: 10;
-  margin-left: 7%;
-}
-
 h1 {
   font-weight: 100;
   font-size: calc(25px + 6vmin);
