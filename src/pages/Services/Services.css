@@ -4,12 +4,13 @@
   text-align: center;
   background-color: #ffffff;
   color: #d5b970;
-  font-family: 'Cinzel Decorative';
+  font-family: 'EB Garamond';
   text-align: center;
   margin-bottom: 50px;
 }
 
 .Services-header {
+  font-family: 'Cinzel Decorative';
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,24 +18,11 @@
   font-size: calc(10px + 2vmin);
 }
 
-.Services-body {
-  font-family: 'EB Garamond';
-  display: inline-grid;
-  grid-template-columns: repeat(3, 3fr);
-  /* margin-left: 250px;
-  margin-right: 250px; */
-}
-
-.Services-bordered {
-  border-left: solid #d5b970;
-  border-right: solid #d5b970;
-}
-
 .Services-paragraph {
-  font-family: 'EB Garamond';
   text-justify: inter-word;
   line-height: 1.6;
   margin: 10px;
   margin-left: 50px;
   margin-right: 50px;
+  width: 400px;
 }

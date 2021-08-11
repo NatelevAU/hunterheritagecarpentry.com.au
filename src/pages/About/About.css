@@ -15,22 +15,12 @@
   font-size: calc(10px + 2vmin);
 }
 
-.About-body {
-  margin-left: 3.5%;
-  margin-right: 3.5%;
-  display: inline-flex;
-}
-
-.About-box {
-  display: block;
-}
-
 .About-border {
   border-style: solid;
   border-color: rgb(255, 255, 255);
   border-width: thin;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 5%;
+  margin-right: 5%;
   margin-bottom: 50px;
   max-width: 350px;
 }

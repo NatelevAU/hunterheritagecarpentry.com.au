@@ -17,14 +17,6 @@
   font-size: calc(10px + 2vmin);
 }
 
-.Jobs-body {
-  font-family: 'EB Garamond';
-  display: inline-grid;
-  grid-template-columns: repeat(2, 2fr);
-  /* margin-left: 250px;
-  margin-right: 250px; */
-}
-
 .Jobs-paragraph {
   font-family: 'EB Garamond';
   text-justify: inter-word;
@@ -33,6 +25,7 @@
   margin-left: 60px;
   margin-right: 60px;
   font-size: calc(8px + 2vmin);
+  max-width: 700px;
 }
 
 .Jobs-image {

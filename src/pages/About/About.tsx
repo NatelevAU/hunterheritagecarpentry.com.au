@@ -1,3 +1,4 @@
+import { Grid } from '@material-ui/core';
 import React from 'react';
 
 import './About.css';
@@ -8,8 +9,8 @@ const About = () => {
       <header className="About-header">
         <h1>about us</h1>
       </header>
-      <div className="About-body">
-        <div className="About-box">
+      <Grid container direction="row" justifyContent="space-evenly" alignItems="flex-start">
+        <div>
           <h2>who we are</h2>
           <div className="About-border">
             <div className="About-paragraph">
@@ -20,7 +21,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="About-box">
+        <div>
           <h2>our mission</h2>
           <div className="About-border">
             <div className="About-paragraph">
@@ -33,7 +34,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="About-box">
+        <div>
           <h2>what we do</h2>
           <div className="About-border">
             <div className="About-paragraph">
@@ -45,7 +46,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
+      </Grid>
     </div>
   );
 };

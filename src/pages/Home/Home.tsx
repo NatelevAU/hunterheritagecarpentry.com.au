@@ -14,7 +14,9 @@ const Home = () => {
   return (
     <div className="Home" style={homeStyle}>
       <header className="Home-header">
-        <h1>hunter heritage carpentry</h1>
+        <h1>
+          hunter<br></br>heritage<br></br>carpentry
+        </h1>
       </header>
       <body className="Home-body">
         <p>
