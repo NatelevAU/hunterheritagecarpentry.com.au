@@ -1,9 +1,8 @@
-import { Box } from '@material-ui/core';
+import { Box, Typography } from '@material-ui/core';
 import React from 'react';
 
 import { WHITE } from '../../Style';
 
-import './Home.css';
 import background from '../../images/backgrounds/Home.jpg';
 
 const HomeStyle = {
@@ -20,16 +19,13 @@ const Home = () => {
       color={WHITE}
       fontFamily="Cinzel Decorative"
       minHeight="100vh"
-      textAlign="center"
       display="flex"
       justifyContent="center"
       flexDirection="column"
     >
-      <Box fontSize={`calc(25px + 6vmin)`}>
-        <h1>
-          hunter<br></br>heritage<br></br>carpentry
-        </h1>
-      </Box>
+      <Typography variant="h1">
+        hunter<br></br>heritage<br></br>carpentry
+      </Typography>
       <Box fontSize={`calc(10px + 4vmin)`} marginLeft="7%" textAlign="left">
         <p>
           preservation and <br></br> restoration specialists

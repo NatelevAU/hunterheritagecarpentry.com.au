@@ -1,3 +1,4 @@
+import { Typography } from '@material-ui/core';
 import React from 'react';
 import { SocialIcon } from 'react-social-icons';
 
@@ -26,7 +27,7 @@ const Contact = () => {
   return (
     <div className="Contact">
       <header className="Contact-header">
-        <h1>contact us</h1>
+        <Typography variant="h1">contact us</Typography>
       </header>
       <body className="Contact-body">
         <p>info@hunterheritage.net</p>

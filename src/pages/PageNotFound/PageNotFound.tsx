@@ -1,4 +1,4 @@
-import { Button } from '@material-ui/core';
+import { Button, Typography } from '@material-ui/core';
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
@@ -16,7 +16,7 @@ const PageNotFound: React.FC<{}> = () => {
       </Helmet>
       <header className="PageNotFound-header">
         <img src={logo} className="PageNotFound-logo" alt="Page Not Found Logo" />
-        <h1>404 - Page not found</h1>
+        <Typography variant="h1">404 - Page not found</Typography>
         <Button size="large" variant="contained" color="primary" component={HomeLink}>
           Home
         </Button>

@@ -2,7 +2,6 @@
 
 .Contact {
   background-color: #d5b970;
-  text-align: center;
   font-family: 'Cinzel Decorative';
   display: flex;
   flex-direction: column;
@@ -13,7 +12,6 @@
 }
 
 .Contact-header {
-  text-align: center;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -21,9 +19,7 @@
 
 .Contact-body {
   font-family: 'EB Garamond';
-  font-weight: 100;
   font-size: calc(15px + 2vmin);
-  text-align: center;
   letter-spacing: 10;
   margin-bottom: 50px;
 }

@@ -1,4 +1,4 @@
-import { Grid } from '@material-ui/core';
+import { Grid, Typography } from '@material-ui/core';
 import React from 'react';
 
 import './About.css';
@@ -7,11 +7,11 @@ const About = () => {
   return (
     <div className="About">
       <header className="About-header">
-        <h1>about us</h1>
+        <Typography variant="h1">about us</Typography>
       </header>
       <Grid container direction="row" justifyContent="space-evenly" alignItems="flex-start">
         <div>
-          <h2>who we are</h2>
+          <Typography variant="h2">who we are</Typography>
           <div className="About-border">
             <div className="About-paragraph">
               Hunter Heritage Carpentry is a Maitland based renovation, restoration and construction
@@ -22,7 +22,7 @@ const About = () => {
           </div>
         </div>
         <div>
-          <h2>our mission</h2>
+          <Typography variant="h2">our mission</Typography>
           <div className="About-border">
             <div className="About-paragraph">
               Heritage structures are rich with cultural significance. They tell the remarkable
@@ -35,7 +35,7 @@ const About = () => {
           </div>
         </div>
         <div>
-          <h2>what we do</h2>
+          <Typography variant="h2">what we do</Typography>
           <div className="About-border">
             <div className="About-paragraph">
               Our extensive experience with the varied trades involved in building projects ensures
