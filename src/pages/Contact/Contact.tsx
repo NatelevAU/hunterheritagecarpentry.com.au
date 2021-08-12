@@ -2,6 +2,8 @@ import { Typography } from '@material-ui/core';
 import React from 'react';
 import { SocialIcon } from 'react-social-icons';
 
+import { BLACK } from '../../Style';
+
 import './Contact.css';
 
 // const ContactForm = () => {
@@ -23,6 +25,26 @@ import './Contact.css';
 //   );
 // };
 
+const SocialButton: React.FC<{
+  url: string;
+  bgColor?: string;
+  fgColor?: string;
+  margin?: number;
+  sameTab?: boolean;
+}> = props => {
+  const { url, bgColor, fgColor, margin, sameTab } = props;
+  return (
+    <SocialIcon
+      url={url}
+      target={sameTab ? undefined : '_blank'}
+      rel={sameTab ? undefined : 'noopener noreferrer'}
+      style={{ margin: margin !== undefined ? margin : 20 }}
+      bgColor={bgColor ? bgColor : BLACK}
+      fgColor={fgColor ? fgColor : undefined}
+    />
+  );
+};
+
 const Contact = () => {
   return (
     <div className="Contact">
@@ -31,27 +53,9 @@ const Contact = () => {
       </header>
       <body className="Contact-body">
         <p>info@hunterheritage.net</p>
-        <SocialIcon
-          className="Social-icon"
-          url="https://www.facebook.com/hunterheritagecarpentry"
-          target="_blank"
-          rel="noopener noreferrer"
-          bgColor="#000000"
-        />
-        <SocialIcon
-          className="Social-icon"
-          url="https://www.instagram.com/hunterheritagecarpentry/"
-          target="_blank"
-          rel="noopener noreferrer"
-          bgColor="#000000"
-        />
-        <SocialIcon
-          className="Social-icon"
-          url="https://www.linkedin.com/company/hunter-valley-carpentry/"
-          target="_blank"
-          rel="noopener noreferrer"
-          bgColor="#000000"
-        />
+        <SocialButton url="https://www.facebook.com/hunterheritagecarpentry" />
+        <SocialButton url="https://www.instagram.com/hunterheritagecarpentry/" />
+        <SocialButton url="https://www.linkedin.com/company/hunter-valley-carpentry/" />
       </body>
     </div>
   );
