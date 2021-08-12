@@ -22,9 +22,6 @@ const AppTheme = createTheme({
       main: WHITE,
     },
   },
-  typography: {
-    fontFamily: ['Cinzel Decorative', 'EB Garamond'].join(','),
-  },
 });
 
 responsiveFontSizes(AppTheme);

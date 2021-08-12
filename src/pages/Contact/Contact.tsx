@@ -1,4 +1,4 @@
-import { Typography } from '@material-ui/core';
+import { Box, Typography } from '@material-ui/core';
 import React from 'react';
 import { SocialIcon } from 'react-social-icons';
 
@@ -48,15 +48,21 @@ const SocialButton: React.FC<{
 const Contact = () => {
   return (
     <div className="Contact">
-      <header className="Contact-header">
+      <Box className="Contact-body" textAlign="center">
         <Typography variant="h1">contact us</Typography>
-      </header>
-      <body className="Contact-body">
-        <p>info@hunterheritage.net</p>
+        <Typography
+          style={{
+            fontFamily: 'EB Garamond',
+            fontSize: `calc(15px + 2vmin)`,
+          }}
+        >
+          <p>info@hunterheritage.net</p>
+        </Typography>
+        {/* <FormspreeContact formId="xoqykbyo" /> */}
         <SocialButton url="https://www.facebook.com/hunterheritagecarpentry" />
         <SocialButton url="https://www.instagram.com/hunterheritagecarpentry/" />
         <SocialButton url="https://www.linkedin.com/company/hunter-valley-carpentry/" />
-      </body>
+      </Box>
     </div>
   );
 };

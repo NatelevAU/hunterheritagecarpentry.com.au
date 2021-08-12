@@ -11,15 +11,12 @@
   color: #ffffff;
 }
 
-.Contact-header {
+.Contact-body {
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-}
-
-.Contact-body {
-  font-family: 'EB Garamond';
+  font-family: 'Cinzel Decorative';
   font-size: calc(15px + 2vmin);
+  font-weight: 100;
   letter-spacing: 10;
   margin-bottom: 50px;
 }
