@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
 
 .About {
-  background-color: #d5b970;
-  color: rgb(255, 255, 255);
+  background-color: #ffffff;
+  color: #d5b970;
   font-family: 'Cinzel Decorative';
 }
 
@@ -15,13 +15,14 @@
 }
 
 .About-border {
-  border-style: solid;
-  border-color: rgb(255, 255, 255);
-  border-width: thin;
+  /* border-style: solid; */
+  /* border-color: #d5b970; */
+  /* border-width: thin; */
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 50px;
   max-width: 350px;
+  min-height: calc(100% - 60px);
 }
 
 .About-paragraph {

@@ -15,7 +15,7 @@ const Jobs = () => {
       <header className="Jobs-header">
         <Typography variant="h1">past projects</Typography>
       </header>
-      <Grid container direction="row" justifyContent="center" alignItems="flex-start">
+      <Grid container direction="row" justifyContent="center" alignItems="stretch">
         <div>
           <img src={Image1} className="Jobs-image" alt="" />
         </div>

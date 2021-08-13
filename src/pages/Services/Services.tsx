@@ -62,13 +62,13 @@ const Services = () => {
         <div className="Services-paragraph">
           <Typography variant="h2">Electrical</Typography>
         </div>
-        <div className="Services-paragraph"></div>
         <div className="Services-paragraph">
           <Typography variant="h2">Brickwork</Typography>
         </div>
         <div className="Services-paragraph">
           <Typography variant="h2">Retaining Walls</Typography>
         </div>
+        <div className="Services-paragraph"></div>
       </Grid>
     </div>
   );
