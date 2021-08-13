@@ -1,54 +1,35 @@
-import { createTheme, responsiveFontSizes, ThemeProvider } from '@material-ui/core/styles';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 
+import Page from './components/Page';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
 import Home from './pages/Home/Home';
 import Jobs from './pages/Jobs/Jobs';
 import PageNotFound from './pages/PageNotFound/PageNotFound';
 import Services from './pages/Services/Services';
-import { GOLD, WHITE } from './Style';
+import { Theme1, Theme2 } from './Themes';
 
 import './index.css';
 
-const AppTheme = createTheme({
-  palette: {
-    primary: {
-      main: GOLD,
-    },
-    secondary: {
-      main: WHITE,
-    },
-  },
-});
-
-responsiveFontSizes(AppTheme);
-
-AppTheme.typography.h1 = {
-  fontWeight: 100,
-  textAlign: 'center',
-  paddingTop: 50,
-  paddingBottom: 50,
-};
-
-AppTheme.typography.h2 = {
-  fontWeight: 100,
-  textAlign: 'center',
-};
+const DefaultTheme = Theme1;
 
 const AppContainer = () => {
   return (
-    <ThemeProvider theme={AppTheme}>
-      <Home />
-      <About />
-      <Services />
-      <Jobs />
-      {/* <Testimonials /> */}
-      <Contact />
-    </ThemeProvider>
+    <>
+      <Page content={<Home />} theme={Theme1} />
+      <Page content={<About />} theme={Theme2} />
+      <Page content={<Services />} theme={Theme1} />
+      <Page content={<Jobs />} theme={Theme2} />
+      {/* <Page content={<Testimonials />} theme={Theme1} /> */}
+      <Page content={<Contact />} theme={Theme1} />
+    </>
   );
+};
+
+const PageNotFoundContainer = () => {
+  return <Page content={<PageNotFound />} theme={DefaultTheme} />;
 };
 
 const App = () => {
@@ -64,7 +45,7 @@ const App = () => {
         <Route path="/jobs" component={AppContainer} />
         <Route path="/testimonials" component={AppContainer} />
         <Route path="/contact" component={AppContainer} />
-        <Route component={PageNotFound} />
+        <Route component={PageNotFoundContainer} />
       </Switch>
     </BrowserRouter>
   );

@@ -1,9 +1,11 @@
-import { Grid, Typography } from '@material-ui/core';
+import { Grid, Theme, Typography } from '@material-ui/core';
 import React from 'react';
+
+import Page from '../../components/Page';
 
 import './Services.css';
 
-const Services = () => {
+const ServicesPage = () => {
   return (
     <div className="Services">
       <header className="Services-header">
@@ -72,6 +74,10 @@ const Services = () => {
       </Grid>
     </div>
   );
+};
+
+const Services: React.FC<{ theme?: Theme }> = props => {
+  return <Page content={<ServicesPage />} theme={props.theme} />;
 };
 
 export default Services;
