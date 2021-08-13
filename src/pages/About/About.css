@@ -14,20 +14,14 @@
   font-size: calc(10px + 2vmin);
 }
 
-.About-border {
-  /* border-style: solid; */
-  /* border-color: #d5b970; */
-  /* border-width: thin; */
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-bottom: 50px;
-  max-width: 350px;
-  min-height: calc(100% - 60px);
-}
-
-.About-paragraph {
+.About-paragarph {
   font-family: 'EB Garamond';
   text-justify: inter-word;
   line-height: 1.6;
-  margin: 10px;
+  margin-left: calc(10px + 5%);
+  margin-right: calc(10px + 5%);
+  margin-top: 10px;
+  margin-bottom: 50px;
+  max-width: 350px;
+  min-height: calc(100% - 60px);
 }
