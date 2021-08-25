@@ -63,6 +63,14 @@ const Contact = () => {
         <SocialButton url="https://www.instagram.com/hunterheritagecarpentry/" />
         <SocialButton url="https://www.linkedin.com/company/hunter-valley-carpentry/" />
       </Box>
+      <Typography
+        style={{
+          fontFamily: 'EB Garamond',
+          fontSize: `calc(15px + 2vmin)`,
+        }}
+      >
+        ABN 98 633 779 198 / LIC 366974C
+      </Typography>
     </div>
   );
 };
