@@ -66,10 +66,10 @@ const Contact = () => {
       <Typography
         style={{
           fontFamily: 'EB Garamond',
-          fontSize: `calc(15px + 2vmin)`,
+          fontSize: `calc(10px + 1vmin)`,
         }}
       >
-        ABN 98 633 779 198 / LIC 366974C
+        <p>ABN 98 633 779 198 / LIC 366974C</p>
       </Typography>
     </div>
   );

@@ -1,22 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+@import '~react-image-gallery/styles/css/image-gallery.css';
 
 .Jobs {
   background-color: #ffffff;
   color: #d5b970;
-  font-family: 'Cinzel Decorative';
+  font-family: 'EB Garamond';
   margin-bottom: 50px;
 }
 
 .Jobs-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  font-family: 'Cinzel Decorative';
   justify-content: top;
   font-size: calc(10px + 2vmin);
 }
 
 .Jobs-paragraph {
-  font-family: 'EB Garamond';
   text-justify: inter-word;
   line-height: 1.6;
   margin: 10px;
