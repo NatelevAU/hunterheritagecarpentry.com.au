@@ -3,7 +3,7 @@ import React from 'react';
 import ImageGallery from 'react-image-gallery';
 
 import './Jobs.css';
-import Image1 from '../../images/jobs/Job1.jpeg';
+import Image1 from '../../images/jobs/Job1.jpg';
 import Image2 from '../../images/jobs/Job2.jpg';
 import Image3 from '../../images/jobs/Job3.jpg';
 import Image4 from '../../images/jobs/Job4.jpg';
@@ -13,27 +13,21 @@ import Image6 from '../../images/jobs/Job6.jpg';
 const Images = [
   {
     original: Image1,
-    description: 'The Great Northern Hotel',
   },
   {
     original: Image2,
-    description: '',
   },
   {
     original: Image3,
-    description: '',
   },
   {
     original: Image4,
-    description: '',
   },
   {
     original: Image5,
-    description: '',
   },
   {
     original: Image6,
-    description: '',
   },
 ];
 
