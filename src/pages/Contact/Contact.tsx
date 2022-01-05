@@ -69,7 +69,7 @@ const Contact = () => {
           fontSize: `calc(10px + 1vmin)`,
         }}
       >
-        <p>ABN 98 633 779 198 / LIC 366974C</p>
+        <p>ABN 45 655 869 668 / LIC 366974C</p>
       </Typography>
     </div>
   );
