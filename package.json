@@ -12,12 +12,12 @@
     "build": "rm -rf build && react-scripts build",
     "test": "echo no tests implemented",
     "eject": "react-scripts eject",
-    "clean": "rm -rf build hint-report *.log && yarn lint-fix",
-    "lint": "yarn lint-full",
+    "clean": "rm -rf build hint-report *.log && npm run lint-fix",
+    "lint": "npm run lint-full",
     "lint-full": "eslint . --max-warnings=0 && prettier --check ./**/*.{json,gql,yml,yaml,html,md,css}",
     "lint-fix": "eslint --fix . --max-warnings=0 && prettier --write ./**/*.{json,gql,yml,yaml,html,md,css}",
-    "reinstall": "rm -rf node_modules yarn.lock && yarn install",
-    "predeploy": "yarn build",
+    "reinstall": "rm -rf node_modules yarn.lock && npm run install",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "webhint": "hint http://localhost:3000"
   },
@@ -67,8 +67,7 @@
   },
   "engines": {
     "node": ">=16",
-    "npm": ">=7.20",
-    "yarn": ">=1.22"
+    "npm": ">=7.20"
   },
   "eslintConfig": {
     "extends": [

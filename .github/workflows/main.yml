@@ -19,10 +19,10 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'yarn'
-      - run: yarn install
-      - run: yarn lint-full
-      - run: yarn build
+          cache: 'npm'
+      - run: npm run install
+      - run: npm run lint-full
+      - run: npm run build
 
       - name: Deploy to Github Pages
         uses: JamesIves/github-pages-deploy-action@4.1.4
