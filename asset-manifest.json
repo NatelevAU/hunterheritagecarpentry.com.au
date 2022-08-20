@@ -1,31 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.007745ea.chunk.css",
-    "main.js": "/static/js/main.e1a1556e.chunk.js",
-    "main.js.map": "/static/js/main.e1a1556e.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.2edb704a.js",
-    "runtime-main.js.map": "/static/js/runtime-main.2edb704a.js.map",
-    "static/css/2.80765319.chunk.css": "/static/css/2.80765319.chunk.css",
-    "static/js/2.2efcb68e.chunk.js": "/static/js/2.2efcb68e.chunk.js",
-    "static/js/2.2efcb68e.chunk.js.map": "/static/js/2.2efcb68e.chunk.js.map",
+    "main.css": "/static/css/main.b70a3187.css",
+    "main.js": "/static/js/main.d05c97cf.js",
+    "static/media/Home.jpg": "/static/media/Home.d831c253ad973fa4841e.jpg",
+    "static/media/Job4.jpg": "/static/media/Job4.6a0a750215ef88795d9b.jpg",
+    "static/media/Job2.jpg": "/static/media/Job2.dcfeca997e2b23a7881d.jpg",
+    "static/media/Job1.jpg": "/static/media/Job1.441c6bb3f1495d999f5a.jpg",
+    "static/media/Job3.jpg": "/static/media/Job3.e5e55f8d52192d30d344.jpg",
+    "static/media/Job6.jpg": "/static/media/Job6.a10d381eb0b504af8873.jpg",
+    "static/media/Job5.jpg": "/static/media/Job5.97ac12b3360c158f10da.jpg",
+    "static/media/PageNotFound.png": "/static/media/PageNotFound.aaee5446a56cae721d1b.png",
     "index.html": "/index.html",
-    "static/css/2.80765319.chunk.css.map": "/static/css/2.80765319.chunk.css.map",
-    "static/css/main.007745ea.chunk.css.map": "/static/css/main.007745ea.chunk.css.map",
-    "static/js/2.2efcb68e.chunk.js.LICENSE.txt": "/static/js/2.2efcb68e.chunk.js.LICENSE.txt",
-    "static/media/Home.d831c253.jpg": "/static/media/Home.d831c253.jpg",
-    "static/media/Job1.441c6bb3.jpg": "/static/media/Job1.441c6bb3.jpg",
-    "static/media/Job2.dcfeca99.jpg": "/static/media/Job2.dcfeca99.jpg",
-    "static/media/Job3.e5e55f8d.jpg": "/static/media/Job3.e5e55f8d.jpg",
-    "static/media/Job4.6a0a7502.jpg": "/static/media/Job4.6a0a7502.jpg",
-    "static/media/Job5.97ac12b3.jpg": "/static/media/Job5.97ac12b3.jpg",
-    "static/media/Job6.a10d381e.jpg": "/static/media/Job6.a10d381e.jpg",
-    "static/media/PageNotFound.aaee5446.png": "/static/media/PageNotFound.aaee5446.png"
+    "main.b70a3187.css.map": "/static/css/main.b70a3187.css.map",
+    "main.d05c97cf.js.map": "/static/js/main.d05c97cf.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.2edb704a.js",
-    "static/css/2.80765319.chunk.css",
-    "static/js/2.2efcb68e.chunk.js",
-    "static/css/main.007745ea.chunk.css",
-    "static/js/main.e1a1556e.chunk.js"
+    "static/css/main.b70a3187.css",
+    "static/js/main.d05c97cf.js"
   ]
 }
