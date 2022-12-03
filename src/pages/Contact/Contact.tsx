@@ -56,7 +56,7 @@ const Contact = () => {
             fontSize: `calc(15px + 2vmin)`,
           }}
         >
-          <p>info@hunterheritage.net</p>
+          <p>casey@hunterheritage.net</p>
         </Typography>
         {/* <FormspreeContact formId="xoqykbyo" /> */}
         <SocialButton url="https://www.facebook.com/hunterheritagecarpentry" />
