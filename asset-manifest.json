@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b70a3187.css",
-    "main.js": "/static/js/main.d05c97cf.js",
+    "main.js": "/static/js/main.0ff77146.js",
     "static/media/Home.jpg": "/static/media/Home.d831c253ad973fa4841e.jpg",
     "static/media/Job4.jpg": "/static/media/Job4.6a0a750215ef88795d9b.jpg",
     "static/media/Job2.jpg": "/static/media/Job2.dcfeca997e2b23a7881d.jpg",
@@ -12,10 +12,10 @@
     "static/media/PageNotFound.png": "/static/media/PageNotFound.aaee5446a56cae721d1b.png",
     "index.html": "/index.html",
     "main.b70a3187.css.map": "/static/css/main.b70a3187.css.map",
-    "main.d05c97cf.js.map": "/static/js/main.d05c97cf.js.map"
+    "main.0ff77146.js.map": "/static/js/main.0ff77146.js.map"
   },
   "entrypoints": [
     "static/css/main.b70a3187.css",
-    "static/js/main.d05c97cf.js"
+    "static/js/main.0ff77146.js"
   ]
 }
