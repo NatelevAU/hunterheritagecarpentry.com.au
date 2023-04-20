@@ -7,9 +7,13 @@
 # React-App
 
 [![Website](https://img.shields.io/website?url=https://www.hunterheritagecarpentry.com.au)](https://www.hunterheritagecarpentry.com.au)
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/NatelevAU/hhc-website/Build)](https://github.com/NatelevAU/hhc-website/actions)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/NatelevAU/hhc-website/main.yml)](https://github.com/NatelevAU/hhc-website/actions)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?label=style)](https://github.com/prettier/prettier)
 [![GitHub](https://img.shields.io/github/license/NatelevAU/hhc-website)](https://choosealicense.com/licenses/isc/)
+
+![](https://img.shields.io/badge/Node-v16-blueviolet)
+![](https://img.shields.io/badge/React-v17-blue)
+![](https://img.shields.io/badge/Typescript-v4-yellowgreen)
 
 ## Setup
 
