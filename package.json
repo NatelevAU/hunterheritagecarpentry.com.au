@@ -21,7 +21,9 @@
     "webhint": "hint http://localhost:3000"
   },
   "dependencies": {
-    "@material-ui/core": "^4.12.2",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.14.14",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "@types/react-helmet": "^6.1.2",

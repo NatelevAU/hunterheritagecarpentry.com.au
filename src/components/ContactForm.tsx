@@ -1,5 +1,5 @@
-import { Box, Button, TextField, ThemeProvider } from '@material-ui/core';
-import { createTheme } from '@material-ui/core/styles';
+import { Box, Button, TextField, ThemeProvider } from '@mui/material';
+import { createTheme } from '@mui/material/styles';
 import axios from 'axios';
 import { ErrorMessage, Form, Formik } from 'formik';
 import React, { useState } from 'react';
@@ -34,10 +34,10 @@ const FormspreeContact: React.FC<{ formId: string }> = props => {
 
   return (
     <ThemeProvider theme={formTheme}>
-      <Box marginLeft="20px" marginRight="20px">
+      <Box sx={{ marginLeft: '20px', marginRight: '20px' }}>
         <Formik
           initialValues={{ name: '', email: '', telephone: '', message: '' }}
-          // validationSchema={FormSchema}
+          validationSchema={FormSchema}
           onSubmit={(values, { setSubmitting, resetForm }) => {
             alert(JSON.stringify(values, null, 2));
             axios({
@@ -64,42 +64,38 @@ const FormspreeContact: React.FC<{ formId: string }> = props => {
                 label="Name"
                 type="text"
                 variant="filled"
-                fullWidth={true}
-                style={{ marginBottom: '20px' }}
+                fullWidth
+                sx={{ marginBottom: '20px' }}
               />
-              <br></br>
               <TextField
                 id="email"
                 name="email"
                 label="Email*"
                 type="email"
                 variant="filled"
-                fullWidth={true}
-                style={{ marginBottom: '20px' }}
+                fullWidth
+                sx={{ marginBottom: '20px' }}
               />
-              <br></br>
               <TextField
                 id="telephone"
                 name="telephone"
                 label="Phone"
-                type="telephone"
+                type="tel"
                 variant="filled"
-                fullWidth={true}
-                style={{ marginBottom: '20px' }}
+                fullWidth
+                sx={{ marginBottom: '20px' }}
               />
               <ErrorMessage name="email" className="errorMsg" component="p" />
               <TextField
                 id="message"
                 name="message"
                 label="Message*"
-                type="message"
                 variant="filled"
                 multiline
-                minRows={5}
-                fullWidth={true}
-                style={{ marginBottom: '20px' }}
+                rows={5}
+                fullWidth
+                sx={{ marginBottom: '20px' }}
               />
-              <br></br>
               <ErrorMessage name="message" className="errorMsg" component="p" />
               <Button
                 type="submit"

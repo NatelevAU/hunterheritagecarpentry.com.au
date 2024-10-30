@@ -1,4 +1,4 @@
-import { Grid, Theme, Typography } from '@material-ui/core';
+import { Grid, Theme, Typography } from '@mui/material';
 import React from 'react';
 
 import Page from '../../components/Page';

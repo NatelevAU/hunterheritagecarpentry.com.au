@@ -1,4 +1,4 @@
-import { Box, Typography } from '@material-ui/core';
+import { Box, Typography } from '@mui/material';
 import React from 'react';
 import ImageGallery from 'react-image-gallery';
 
@@ -41,11 +41,13 @@ const Jobs = () => {
         <Typography variant="h1">past projects</Typography>
       </header>
       <Box
-        display="flex"
-        flexDirection="column"
-        justifyContent="center"
-        alignItems="center"
-        textAlign="center"
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center',
+          textAlign: 'center',
+        }}
       >
         <ImageGallery
           ref={myRef}
@@ -57,7 +59,7 @@ const Jobs = () => {
             }
           }}
         />
-        {currentIndex == 1 && (
+        {currentIndex === 1 && (
           <div className="Jobs-paragraph">
             <Typography variant="h2">The Great Northern Hotel</Typography>
             We conducted a heritage audit on the hotel windows with a view of returning them back to
@@ -65,22 +67,25 @@ const Jobs = () => {
             standard, and constructed shelters to protect the building.
           </div>
         )}
-        {currentIndex == 2 && (
+        {currentIndex === 2 && (
           <div className="Jobs-paragraph">
             <Typography variant="h2">The Old Newcastle Courthouse</Typography>
             We restored the windows, doors, skirting, architraves and trim, reproducing any that
-            were missing or couldn’t be salvaged.
+            were missing or couldn't be salvaged.
           </div>
         )}
-        {currentIndex == 3 && (
-          <div className="Jobs-paragraph" style={{ marginLeft: 40, marginRight: 40 }}>
-            <Typography variant="h2">Hamilton Signal Box</Typography>
-            We installed a mantlepiece, replaced skirting boards, trim and aluminium windows with
-            timber reproductions that were as closely matched to the originals as we could ascertain
-            from inspecting the building, old photographs and consulting with heritage architects.
+        {currentIndex === 3 && (
+          <div className="Jobs-paragraph">
+            <Box sx={{ marginLeft: 5, marginRight: 5 }}>
+              <Typography variant="h2">Hamilton Signal Box</Typography>
+              We installed a mantlepiece, replaced skirting boards, trim and aluminium windows with
+              timber reproductions that were as closely matched to the originals as we could
+              ascertain from inspecting the building, old photographs and consulting with heritage
+              architects.
+            </Box>
           </div>
         )}
-        {currentIndex == 4 && (
+        {currentIndex === 4 && (
           <div className="Jobs-paragraph">
             <Typography variant="h2">Newcastle Art TAFE</Typography>
             We managed the third and final stage of restoration, which included the replacement of
@@ -88,14 +93,14 @@ const Jobs = () => {
             project to be involved in.
           </div>
         )}
-        {currentIndex == 5 && (
+        {currentIndex === 5 && (
           <div className="Jobs-paragraph">
             <Typography variant="h2">Clive Lodge</Typography>
             We replaced the balustrading, reproducing them as closely to the originals as we could
             determine from old photographs.
           </div>
         )}
-        {currentIndex == 6 && (
+        {currentIndex === 6 && (
           <div className="Jobs-paragraph">
             <Typography variant="h2">The Rigby</Typography>
             We transformed this iconic Maitland building into a stylish restaurant and bar,
