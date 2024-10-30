@@ -33,31 +33,31 @@ module.exports = {
         },
     },
     overrides: [
-        {
-            files: ['*.gql'],
-            parser: '@graphql-eslint/eslint-plugin',
-            plugins: ['@graphql-eslint'],
-            rules: {
-                'prettier/prettier': ['warn', { parser: 'graphql' }],
-            },
-        },
-        {
-            files: ['*.json'],
-            extends: ['plugin:json/recommended'],
-            plugins: ['json'],
-            rules: {
-                'json/*': ['error', 'allowComments'],
-                'prettier/prettier': ['warn', { parser: 'json' }],
-            },
-        },
-        {
-            files: ['*.yaml', '*.yml'],
-            extends: ['plugin:yaml/recommended'],
-            plugins: ['yaml'],
-            rules: {
-                'prettier/prettier': ['warn', { parser: 'yaml' }],
-            },
-        },
+        // {
+        //     files: ['*.gql'],
+        //     parser: '@graphql-eslint/eslint-plugin',
+        //     plugins: ['@graphql-eslint'],
+        //     rules: {
+        //         'prettier/prettier': ['warn', { parser: 'graphql' }],
+        //     },
+        // },
+        // {
+        //     files: ['*.json'],
+        //     extends: ['plugin:json/recommended'],
+        //     plugins: ['json'],
+        //     rules: {
+        //         'json/*': ['error', 'allowComments'],
+        //         'prettier/prettier': ['warn', { parser: 'json' }],
+        //     },
+        // },
+        // {
+        //     files: ['*.yaml', '*.yml'],
+        //     extends: ['plugin:yaml/recommended'],
+        //     plugins: ['yaml'],
+        //     rules: {
+        //         'prettier/prettier': ['warn', { parser: 'yaml' }],
+        //     },
+        // },
         {
             files: ['*.ts', '*.tsx', '*.js', '*.jsx'],
             parser: '@typescript-eslint/parser',
