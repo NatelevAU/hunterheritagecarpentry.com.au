@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
-@import '~react-image-gallery/styles/css/image-gallery.css';
+@import 'react-image-gallery/styles/css/image-gallery.css';
 
 .Jobs {
   background-color: #ffffff;
