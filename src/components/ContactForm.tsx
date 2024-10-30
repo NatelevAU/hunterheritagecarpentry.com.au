@@ -1,5 +1,5 @@
 import { Box, Button, TextField, ThemeProvider } from '@mui/material';
-import { createTheme } from '@mui/material/styles';
+import { createTheme } from '@mui/material';
 import axios from 'axios';
 import { ErrorMessage, Form, Formik } from 'formik';
 import React, { useState } from 'react';
@@ -9,6 +9,7 @@ import { BLACK, WHITE } from '../Style';
 
 const formTheme = createTheme({
   palette: {
+    mode: 'light',
     primary: {
       main: BLACK,
     },
@@ -39,20 +40,20 @@ const FormspreeContact: React.FC<{ formId: string }> = props => {
           initialValues={{ name: '', email: '', telephone: '', message: '' }}
           validationSchema={FormSchema}
           onSubmit={(values, { setSubmitting, resetForm }) => {
-            alert(JSON.stringify(values, null, 2));
+            setSubmitting(true);
             axios({
               method: 'POST',
-              url: 'url',
+              url: url,
               data: values,
             })
-              .then((response: any) => {
+              .then(response => {
                 setSubmitting(false);
                 resetForm();
                 handleServerResponse(true, 'Thanks!');
               })
-              .catch((error: { response: { data: { error: any } } }) => {
+              .catch(error => {
                 setSubmitting(false);
-                handleServerResponse(false, error.response.data.error);
+                handleServerResponse(false, error.response?.data?.error || 'An error occurred');
               });
           }}
         >
