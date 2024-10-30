@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Start Single Page Apps for GitHub Pages -->
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // MIT License
+      // https://github.com/rafgraph/spa-github-pages
+      // This script checks to see if a redirect is present in the query string,
+      // converts it back into the correct url and adds it to the
+      // browser's history using window.history.replaceState(...),
+      // which won't cause the browser to attempt to load the new url.
+      // When the single page app is loaded further down in this file,
+      // the correct url will be waiting in the browser's history for
+      // the single page app to route accordingly.
+      (function (l) {
+        if (l.search[1] === '/') {
+          var decoded = l.search
+            .slice(1)
+            .split('&')
+            .map(function (s) {
+              return s.replace(/~and~/g, '&');
+            })
+            .join('?');
+          window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash);
+        }
+      })(window.location);
+    </script>
+    <!-- End Single Page Apps for GitHub Pages -->
+
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/logo120.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/logo152.png" />
+    <link rel="apple-touch-icon" sizes="167x167" href="/logo167.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/logo180.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- HTML Meta Tags -->
+    <title>Hunter Heritage Carpentry</title>
+    <meta name="description" content="DESCRIPTION" />
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="Hunter Heritage Carpentry" />
+    <meta itemprop="description" content="DESCRIPTION" />
+    <meta itemprop="image" content="/card500.png" />
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://www.hunterheritagecarpentry.com.au" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Hunter Heritage Carpentry" />
+    <meta property="og:description" content="DESCRIPTION" />
+    <meta property="og:image" content="/card500.png" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Hunter Heritage Carpentry" />
+    <meta name="twitter:description" content="DESCRIPTION" />
+    <meta name="twitter:image" content="/card500.png" />
+    <title>Hunter Heritage Carpentry</title>
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this website.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/index.tsx"></script>
+  </body>
+</html>
