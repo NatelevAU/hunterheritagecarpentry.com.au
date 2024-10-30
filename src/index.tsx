@@ -36,7 +36,7 @@ const App = () => {
   const HomeRedirect: React.FC<{}> = props => <Redirect to="/" {...props} />;
 
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename={import.meta.env.PUBLIC_URL}>
       <Switch>
         <Route exact path="/" component={AppContainer} />
         <Route path="/home" component={AppContainer} />
