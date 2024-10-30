@@ -1,6 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
+import { createRoot } from 'react-dom/client';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import Page from './components/Page';
 import About from './pages/About/About';
@@ -33,27 +33,28 @@ const PageNotFoundContainer = () => {
 };
 
 const App = () => {
-  const HomeRedirect: React.FC<{}> = props => <Redirect to="/" {...props} />;
-
   return (
     <BrowserRouter basename={import.meta.env.PUBLIC_URL}>
-      <Switch>
-        <Route exact path="/" component={AppContainer} />
-        <Route path="/home" component={AppContainer} />
-        <Route path="/about" component={AppContainer} />
-        <Route path="/services" component={AppContainer} />
-        <Route path="/jobs" component={AppContainer} />
-        <Route path="/testimonials" component={AppContainer} />
-        <Route path="/contact" component={AppContainer} />
-        <Route component={PageNotFoundContainer} />
-      </Switch>
+      <Routes>
+        <Route path="/" element={<AppContainer />} />
+        <Route path="/home" element={<AppContainer />} />
+        <Route path="/about" element={<AppContainer />} />
+        <Route path="/services" element={<AppContainer />} />
+        <Route path="/jobs" element={<AppContainer />} />
+        <Route path="/testimonials" element={<AppContainer />} />
+        <Route path="/contact" element={<AppContainer />} />
+        <Route path="*" element={<PageNotFoundContainer />} />
+      </Routes>
     </BrowserRouter>
   );
 };
 
-ReactDOM.render(
+const container = document.getElementById('root');
+if (!container) throw new Error('Failed to find the root element');
+const root = createRoot(container);
+
+root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById('root'),
 );
