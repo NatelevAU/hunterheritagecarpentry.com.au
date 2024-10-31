@@ -31,8 +31,12 @@ const Images = [
   },
 ];
 
+interface ImageGalleryType {
+  getCurrentIndex(): number;
+}
+
 const Jobs = () => {
-  const myRef = React.useRef<ImageGallery>(null);
+  const myRef = React.useRef<ImageGalleryType>(null);
   const [currentIndex, setCurrentIndex] = React.useState<number>(1);
 
   return (
