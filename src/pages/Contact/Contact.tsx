@@ -4,27 +4,6 @@ import { SocialIcon } from 'react-social-icons';
 
 import { BLACK } from '../../Style';
 
-import './Contact.css';
-
-// const ContactForm = () => {
-//   const [state, handleSubmit] = useForm('xoqykbyo');
-//   if (state.succeeded) {
-//     return <p>Thanks for joining!</p>;
-//   }
-//   return (
-//     <form onSubmit={handleSubmit}>
-//       <label htmlFor="email">Email Address</label>
-//       <input id="email" type="email" name="email" />
-//       <ValidationError prefix="Email" field="email" errors={state.errors} />
-//       <textarea id="message" name="message" />
-//       <ValidationError prefix="Message" field="message" errors={state.errors} />
-//       <Button variant="contained" color="primary">
-//         Submit
-//       </Button>
-//     </form>
-//   );
-// };
-
 const SocialButton: React.FC<{
   url: string;
   bgColor?: string;
