@@ -12,14 +12,8 @@
     "serve": "vite preview",
     "build": "rm -rf build && tsc && vite build",
     "test": "echo no tests implemented",
-    "clean": "rm -rf build hint-report *.log *.zip && npm run lint-fix",
-    "lint": "npm run lint-full",
-    "lint-full": "eslint . --max-warnings=0 && prettier --check ./**/*.{json,gql,yml,yaml,html,md,css}",
-    "lint-fix": "eslint --fix . --max-warnings=0 && prettier --write ./**/*.{json,gql,yml,yaml,html,md,css}",
-    "reinstall": "rm -rf node_modules package.lock && npm install",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "webhint": "hint http://localhost:3000"
+    "lint": "eslint . --max-warnings=0 && prettier --check ./**/*.{json,gql,yml,yaml,html,md,css}",
+    "lint-fix": "eslint --fix . --max-warnings=0 && prettier --write ./**/*.{json,gql,yml,yaml,html,md,css}"
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",
