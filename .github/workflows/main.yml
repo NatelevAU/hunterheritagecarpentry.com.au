@@ -120,6 +120,11 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
+      - name: Download build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: build
+          path: frontend/build/
       - name: Deploy to Github Pages
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
