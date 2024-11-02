@@ -1,14 +1,13 @@
 {
   "name": "Node.js & TypeScript",
   "build": {
-    "dockerfile": "Dockerfile",
-    // Update 'VARIANT' to pick a Node version
-    "args": {
-      "VARIANT": "16"
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode"]
     }
   },
-  // Add the IDs of extensions you want installed when the container is created.
-  "extensions": ["dbaeumer.vscode-eslint", "ms-vscode.vscode-typescript-tslint-plugin"]
-  // Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
-  // "remoteUser": "node"
+  "postCreateCommand": "npm install",
+  "remoteUser": "node"
 }
