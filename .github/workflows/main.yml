@@ -76,7 +76,7 @@ jobs:
       - name: Run tests
         run: npm test
 
-  security_scan:
+  audit:
     needs: install_dependencies
     runs-on: ubuntu-latest
     steps:
@@ -95,7 +95,7 @@ jobs:
         run: npm audit
 
   build:
-    needs: [lint, test, security_scan]
+    needs: [lint, test, audit]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
