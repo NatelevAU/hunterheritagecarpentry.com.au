@@ -54,9 +54,7 @@ jobs:
             node_modules
           key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
       - name: Lint codebase
-        run: |
-          cd frontend
-          npm run lint
+        run: npm run lint
 
   test:
     needs: install_dependencies
