@@ -10,7 +10,9 @@
   "scripts": {
     "dev": "vite",
     "serve": "vite preview",
-    "build": "rm -rf build && tsc && vite build",
+    "build": "tsc && vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "echo no tests implemented",
     "lint": "eslint . --max-warnings=0 && prettier --check ./**/*.{json,gql,yml,yaml,html,md,css}",
     "lint-fix": "eslint --fix . --max-warnings=0 && prettier --write ./**/*.{json,gql,yml,yaml,html,md,css}"
