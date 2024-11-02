@@ -2,10 +2,10 @@
   "private": true,
   "type": "module",
   "main": "src/index.tsx",
-  "homepage": "https://natelevau.github.io/hunterheritagecarpentry.com.au",
+  "homepage": "https://natelevau.github.io/hunterheritagecarpentry.com.au/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/NatelevAU/hhc-website.git"
+    "url": "https://github.com/NatelevAU/hunterheritagecarpentry.com.au.git"
   },
   "scripts": {
     "dev": "vite",
